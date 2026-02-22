@@ -1,0 +1,48 @@
+from car_motor import CarMotor
+import time
+car = CarMotor()
+
+# car.Car_Run(150, 150)
+# 
+# car.Car_Right(100, 100)
+# time.sleep(2)
+# car.Car_Stop()
+# car.Car_Back(150, 150)
+# time.sleep(1)
+# car.Car_Run(150, 150)
+# time.sleep(1)
+# car.Car_Left(150, 150)
+# time.sleep(1)
+car.Car_Right(150, 150)
+time.sleep(1)
+car.Car_Stop()
+
+# car.Ctrl_Servo(3, 180)
+# time.sleep(1)
+# car.Ctrl_Servo(3, 90)
+# time.sleep(1)
+# car.Ctrl_Servo(3, 0)
+
+
+# car.Ctrl_Servo(4, 180)
+# time.sleep(1)
+# car.Ctrl_Servo(4, 90)
+# time.sleep(1)
+# car.Ctrl_Servo(4, 0)
+# time.sleep(1)
+# car.Ctrl_Servo(4, 90)
+# time.sleep(1)
+# car.Ctrl_Servo(4, 270)
+# time.sleep(1)
+# car.Ctrl_Servo(4, 360)
+# time.sleep(1)
+# car.Ctrl_Servo(4, 0)
+
+# time.sleep(2)
+# time.sleep(2)
+# car.Car_Left(150, 150)
+# time.sleep(2)
+# car.Car_Right(150, 150)
+# time.sleep(2)
+# car.Car_Spin_Left(150, 150)
+# time.sleep(2)

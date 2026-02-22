@@ -12,10 +12,10 @@
 import argparse
 import struct
 import wave
-
+import time
 from picovoice import *
 from pvrecorder import PvRecorder
-
+from walle.control.car_motor import CarMotor
 
 def main():
     parser = argparse.ArgumentParser()
@@ -114,6 +114,19 @@ def main():
                 print("    %s : '%s'" % (slot, value))
             print('  }')
             print('}\n')
+            car = CarMotor()
+            if inference.intent == 'moveAction':
+                if inference.slots['where'] == 'front':
+                    car.Car_Run(150, 150)
+                else:
+                    car.Car_Back(150, 150)
+            elif inference.intent == 'rotAction':
+                if inference.slots['dir'] == 'left':
+                    car.Car_Left(150, 150)
+                else:
+                    car.Car_Right(150, 150)
+            time.sleep(1)
+            car.Car_Stop()
         else:
             print("Didn't understand the command.\n")
 

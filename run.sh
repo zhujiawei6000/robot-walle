@@ -1,1 +1,1 @@
-python3 walle/main.py --access_key `cat resource/access_key/picovoice.key` --keyword_path /home/jiawei/venv/robot/lib/python3.11/site-packages/pvporcupine/resources/keyword_files/raspberry-pi/jarvis_raspberry-pi.ppn --context_path resource/model/WalleRobot_en_raspberry-pi_v4_0_0.rhn
+python3 -m walle --access_key `cat resource/access_key/picovoice.key` --keyword_path resource/model/jarvis_raspberry-pi.ppn --context_path resource/model/WalleRobot_en_raspberry-pi_v4_0_0.rhn
